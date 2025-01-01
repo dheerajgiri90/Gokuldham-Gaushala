@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="entryViewModel"
+            type="com.gokuldham.app.ui.entry.EntryViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_bg"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/app_font_bold"
+            android:gravity="center"
+            android:padding="@dimen/dp_20"
+            android:text="!! श्री !!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size24" /> <!-- Increased text size for tablet -->
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_30">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/app_font_bold"
+                    android:gravity="center"
+                    android:text="धेनु श्री मनावर"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size30" /> <!-- Bigger text size -->
+
+                <TextView
+                    android:id="@+id/textAddVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:background="@drawable/dr_edittext_background"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_25"
+                    android:text="गांव जोडना"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size20" />
+
+                <TextView
+                    android:id="@+id/textAddCustomer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/dr_edittext_background"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_25"
+                    android:text="कस्टमर जोड़ना"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size20" />
+
+                <TextView
+                    android:id="@+id/textAddBusinessman"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/dr_edittext_background"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_25"
+                    android:text="व्यापारी"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size20" />
+
+                <TextView
+                    android:id="@+id/textAddItems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:background="@drawable/dr_edittext_background"
+                    android:gravity="center"
+                    android:padding="@dimen/dp_25"
+                    android:text="आइटम के नाम जोड़ना"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size20" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

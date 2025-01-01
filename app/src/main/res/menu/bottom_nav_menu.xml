@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@mipmap/ic_nav_home"
+        android:title="होम" />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:checked="true"
+        android:icon="@drawable/baseline_person_24"
+        android:title="एंट्री" />
+
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_account"-->
+<!--        android:icon="@drawable/baseline_settings_24"-->
+<!--        android:title="सेटिंग" />-->
+
+</menu>
